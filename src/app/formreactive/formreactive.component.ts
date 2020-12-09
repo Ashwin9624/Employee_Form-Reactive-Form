@@ -20,7 +20,7 @@ export class FormreactiveComponent implements OnInit {
 
   ngOnInit() {}
 
-  onSubmit() {
+  patch() {
     this.form.get("Name").setValue("Ashwin Ramakrishnan");
     const Employee = {
       empid: "1",
@@ -28,6 +28,9 @@ export class FormreactiveComponent implements OnInit {
       phonenumber: "9688074300"
     };
     this.form.patchValue(Employee);
+  }
+
+  onSubmit() {
     console.log(this.form.value);
   }
 }
