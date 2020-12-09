@@ -9,7 +9,7 @@ import { FormGroup, FormControl, Validators } from "@angular/forms";
 export class FormreactiveComponent implements OnInit {
   form = new FormGroup({
     empid: new FormControl("", Validators.required),
-    Name: new FormControl("Arun", Validators.required),
+    Name: new FormControl("", Validators.required),
     address: new FormControl("", Validators.required),
     phonenumber: new FormControl("", [
       Validators.required,
